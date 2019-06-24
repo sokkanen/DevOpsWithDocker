@@ -1,0 +1,32 @@
+docker pull devopsdockeruh/exec_bash_exercise
+docker run -d devopsdockeruh/exec_bash_exercise
+docker ps -a
+CONTAINER ID        IMAGE                               COMMAND                  CREATED             STATUS                   PORTS               NAMES
+8575cb973fc5        devopsdockeruh/exec_bash_exercise   "node index"             52 seconds ago      Up 52 seconds                                upbeat_mccarthy
+4d8f6711b431        ubuntu:16.04                        "sh -c 'while true; …"   About an hour ago   Up About an hour                             looper-it
+48f356ff68b7        devopsdockeruh/pull_exercise        "node index.js"          5 hours ago         Exited (0) 5 hours ago                       kind_leavitt
+docker exec -it upbeat_mccarthy bash
+ls
+cat logs.txt
+Mon, 24 Jun 2019 13:37:14 GMT
+Mon, 24 Jun 2019 13:37:17 GMT
+Mon, 24 Jun 2019 13:37:20 GMT
+Mon, 24 Jun 2019 13:37:23 GMT
+Secret message is:
+"Docker is easy"
+Mon, 24 Jun 2019 13:37:29 GMT
+Mon, 24 Jun 2019 13:37:32 GMT
+Mon, 24 Jun 2019 13:37:35 GMT
+Mon, 24 Jun 2019 13:37:38 GMT
+Secret message is:
+"Docker is easy"
+Mon, 24 Jun 2019 13:37:44 GMT
+Mon, 24 Jun 2019 13:37:47 GMT
+Mon, 24 Jun 2019 13:37:50 GMT
+Mon, 24 Jun 2019 13:37:53 GMT
+Secret message is:
+"Docker is easy"
+Mon, 24 Jun 2019 13:37:59 GMT
+Mon, 24 Jun 2019 13:38:02 GMT
+
+Secret message is "Docker is easy".
