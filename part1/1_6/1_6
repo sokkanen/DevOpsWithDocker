@@ -1,0 +1,8 @@
+docker pull devopsdockeruh/overwrite_cmd_exercise
+mkdir 1_6
+cd 1_6
+touch Dockerfile
+docker build .
+docker images
+docker tag adaea1ea8bb6 docker-clock
+docker run docker-clock
