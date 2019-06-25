@@ -1,0 +1,8 @@
+docker pull devopsdockeruh/first_volume_exercise
+docker tag 072775acf05a firstvolume:latest
+touch output.txt
+docker run --name onepointeight -v $(pwd)/output.txt:/usr/app/logs.txt firstvolume 
+
+Secret message is:
+"Volume bind mount is easy"
+
