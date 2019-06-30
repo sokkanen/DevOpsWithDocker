@@ -1,0 +1,32 @@
+version: '3.5'
+
+services:
+
+  kurkkuback:
+    image: kurkkuback
+    ports:
+      - 5000:5000
+    build: .
+    volumes:
+      - model:/src/model
+  kurkkufront:
+    image: kurkkufront
+    build: .
+    ports:
+      - 3000:3000
+    depends_on:
+      - kurkkuback
+  kurkkutrain:
+    image: kurkkutrain
+    build: .
+    volumes:
+      - model:/src/model
+      - imgs:/src/imgs
+  proxy:
+    image: jwilder/nginx-proxy
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro 
+
+volumes:
+  model:
+  imgs:
