@@ -1,0 +1,10 @@
+Image sizes before optimization:
+
+backend                                 latest              04a89bc98cc4        4 days ago          432MB
+frontend                                latest              2862fe607ee9        4 days ago          529MB
+
+Image sizes after optimization:
+
+slimback                                latest              a327a83c5ca8        About a minute ago   324MB
+slimfront                               latest              26184f8f833e        7 minutes ago        420MB
+
