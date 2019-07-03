@@ -1,0 +1,3 @@
+Usage example:
+
+docker run -v $(pwd)/videos:/videos yle-dl https://areena.yle.fi/1-50023158
