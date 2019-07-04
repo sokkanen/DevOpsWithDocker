@@ -1,0 +1,10 @@
+Image sizes of the slimmed down back- & frontend (exercise 3.1)
+
+slimback                                latest              a327a83c5ca8        47 hours ago        324MB
+slimfront                               latest              26184f8f833e        47 hours ago        420MB
+
+Image sizes of images created FROM node:8.16-alpine
+
+alpinefront                             latest              674eb9628a40        57 seconds ago      237MB
+alpineback                              latest              c27ba0edd1d4        2 minutes ago       141MB
+
